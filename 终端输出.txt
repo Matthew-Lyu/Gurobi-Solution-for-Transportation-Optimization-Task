@@ -1,0 +1,219 @@
+Using license file /Library/gurobi/gurobi.lic
+Changed value of parameter MIPFocus to 3
+   Prev: 0  Min: 0  Max: 3  Default: 0
+Gurobi Optimizer version 9.1.2 build v9.1.2rc0 (mac64)
+Thread count: 8 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 12134 rows, 2368 columns and 25468 nonzeros
+Model fingerprint: 0x07010b05
+Model has 420 general constraints
+Variable types: 0 continuous, 2368 integer (1648 binary)
+Coefficient statistics:
+  Matrix range     [1e-05, 1e+05]
+  Objective range  [1e+00, 1e+00]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e-05, 1e+04]
+Presolve removed 2036 rows and 800 columns
+Presolve time: 0.43s
+Presolved: 10173 rows, 1568 columns, 22956 nonzeros
+Variable types: 0 continuous, 1568 integer (1028 binary)
+Presolved: 10173 rows, 1568 columns, 22956 nonzeros
+
+
+Root relaxation: objective 0.000000e+00, 1933 iterations, 0.29 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0    0.00000    0  223          -    0.00000      -     -    1s
+     0     0    0.00000    0  344          -    0.00000      -     -    4s
+     0     0    0.00000    0  342          -    0.00000      -     -    4s
+H    0     0                       7.0000000    0.00000   100%     -   11s
+H    0     0                       6.0000000    0.00000   100%     -   11s
+     0     0    0.00000    0  305    6.00000    0.00000   100%     -   11s
+     0     0    0.00000    0  305    6.00000    0.00000   100%     -   13s
+     0     2    0.00000    0  305    6.00000    0.00000   100%     -   14s
+     1     4    0.00000    1  395    6.00000    0.00000   100%  4427   15s
+    23    22    0.00000    5  452    6.00000    0.00000   100%  3323   20s
+    31    33    0.00000    5  354    6.00000    0.00000   100%  3807   26s
+    40    62    0.00000    6  389    6.00000    0.00000   100%  3732   30s
+    72    80 infeasible   13         6.00000    0.00000   100%  2659   35s
+   103   123 infeasible   13         6.00000    0.00000   100%  2564   41s
+   208   146    0.08800   17  305    6.00000    0.00000   100%  1780   45s
+H  234   165                       5.0000000    0.00000   100%  1770   49s
+   265   182    0.00000   11  286    5.00000    0.00000   100%  1785   53s
+   296   227    0.00000   14  398    5.00000    0.00000   100%  1790   58s
+   373   256 infeasible    9         5.00000    0.00000   100%  1570   62s
+   390   266    0.00000    5  391    5.00000    0.00000   100%  1599   66s
+   402   274 infeasible   17         5.00000    0.00000   100%  1657   73s
+   432   301 infeasible   11         5.00000    0.00000   100%  1739   80s
+   460   306    0.00240   12  371    5.00000    0.00000   100%  1803   88s
+   476   319    0.00000    9  447    5.00000    0.00000   100%  1892   95s
+   488   330    0.00340    7  273    5.00000    0.00000   100%  2004  105s
+   507   348    0.00000    8  298    5.00000    0.00000   100%  2089  112s
+   527   365    0.00072   11  431    5.00000    0.00000   100%  2135  121s
+   565   392    0.00000    8  545    5.00000    0.00000   100%  2204  134s
+   588   432    0.00000   11  447    5.00000    0.00000   100%  2272  148s
+   649   465    0.00000   12  511    5.00000    0.00000   100%  2266  167s
+   740   519    0.00048   14  326    5.00000    0.00000   100%  2217  182s
+   814   619    0.05083   16  227    5.00000    0.00000   100%  2189  199s
+   950   657    0.00000   17  516    5.00000    0.00000   100%  2035  218s
+   987   723    0.01541   11  457    5.00000    0.00000   100%  2084  236s
+  1089   740    0.00049    9  305    5.00000    0.00000   100%  2039  251s
+  1091   741    1.00000   42  229    5.00000    0.00000   100%  2035  256s
+  1092   742    1.00794   41  383    5.00000    0.00000   100%  2034  260s
+  1094   743    1.00000   38  391    5.00000    0.00000   100%  2030  271s
+  1095   744    0.00000   19  286    5.00000    0.00000   100%  2028  282s
+  1096   745    1.00000   13  299    5.00000    0.00000   100%  2026  295s
+  1099   748    0.00000   11  305    5.00000    0.00000   100%  2089  300s
+  1102   750    1.00203   21  380    5.00000    0.00000   100%  2083  307s
+  1104   751    1.00000   18  452    5.00000    0.00000   100%  2079  318s
+  1105   752    1.00000   14  460    5.00000    0.00000   100%  2078  326s
+  1106   753    1.00000   13  137    5.00000    0.00000   100%  2076  338s
+  1107   753    0.00000   12  570    5.00000    0.00000   100%  2074  345s
+  1108   754    0.00000   11  478    5.00000    0.00000   100%  2072  365s
+  1109   755    1.00000   11  478    5.00000    0.00000   100%  2070  372s
+  1111   759    0.00000   26  369    5.00000    0.00000   100%   170  388s
+  1113   762    0.00000   27  492    5.00000    0.00000   100%   195  404s
+  1117   764    0.00000   28  460    5.00000    0.00000   100%   234  420s
+  1121   767    0.00318   29  357    5.00000    0.00000   100%   281  428s
+  1125   769    0.00000   29  496    5.00000    0.00000   100%   308  438s
+  1129   769    0.04545   30  317    5.00000    0.00000   100%   345  446s
+  1140   770 infeasible   28         5.00000    0.00000   100%   413  456s
+  1144   772    0.00000   31  553    5.00000    0.00000   100%   487  460s
+  1149   774    0.03884   32  582    5.00000    0.00000   100%   532  468s
+  1153   774    0.11460   32  525    5.00000    0.00551   100%   579  473s
+  1158   774 infeasible   33         5.00000    0.00742   100%   598  478s
+  1167   777    0.01138   32  534    5.00000    0.00921   100%   645  482s
+  1175   781 infeasible   33         5.00000    0.02779  99.4%   655  488s
+  1188   782    0.05248   33  619    5.00000    0.03349  99.3%   701  491s
+  1209   792 infeasible   33         5.00000    0.05031  99.0%   743  499s
+  1221   793    0.86302   30  286    5.00000    0.05929  98.8%   778  506s
+  1236   795    0.20495   30  608    5.00000    0.07278  98.5%   824  511s
+  1276   801 infeasible   36         5.00000    0.10664  97.9%   853  519s
+  1304   794     cutoff   37         5.00000    0.15976  96.8%   875  523s
+H 1325   752                       3.0000000    0.20487  93.2%   880  523s
+  1331   745    0.24440   39  198    3.00000    0.22749  92.4%   888  525s
+  1362   770    1.24394   39  323    3.00000    1.00000  66.7%   915  548s
+  1477   770    1.30385   34  410    3.00000    1.00000  66.7%  1037  563s
+  1538   763    1.28571   35  335    3.00000    1.00000  66.7%  1136  580s
+  1571   770 infeasible   35         3.00000    1.00000  66.7%  1190  602s
+  1640   770    1.10379   34  616    3.00000    1.00000  66.7%  1283  614s
+  1663   776    1.02420   36  544    3.00000    1.00000  66.7%  1334  632s
+  1692   769    1.01574   33  562    3.00000    1.00000  66.7%  1399  646s
+  1700   766    1.08346   35  529    3.00000    1.00000  66.7%  1455  658s
+  1719   762    1.00000   31  447    3.00000    1.00000  66.7%  1520  672s
+  1743   753 infeasible   32         3.00000    1.00000  66.7%  1569  687s
+  1766   751    1.00000   36  552    3.00000    1.00000  66.7%  1603  698s
+  1779   755    1.13438   38  499    3.00000    1.00000  66.7%  1656  713s
+  1788   754    1.01128   38  416    3.00000    1.00000  66.7%  1704  726s
+  1815   753    1.00084   40  489    3.00000    1.00000  66.7%  1746  738s
+  1858   759 infeasible   42         3.00000    1.01190  66.3%  1763  750s
+  1897   749    1.01788   39  361    3.00000    1.01596  66.1%  1793  779s
+  1939   734     cutoff   42         3.00000    1.03187  65.6%  1830  795s
+  1961   728    2.00000   38  565    3.00000    1.04706  65.1%  1895  809s
+  1973   737     cutoff   41         3.00000    1.05186  64.9%  1931  820s
+  2016   714 infeasible   41         3.00000    1.06000  64.7%  1958  834s
+  2035   718     cutoff   37         3.00000    1.06313  64.6%  2022  847s
+  2100   719    1.07345   45  468    3.00000    1.06536  64.5%  2026  859s
+  2170   689     cutoff   65         3.00000    1.06966  64.3%  2026  874s
+  2208   660     cutoff   40         3.00000    1.07627  64.1%  2075  888s
+  2233   635     cutoff   51         3.00000    1.08302  63.9%  2121  902s
+  2251   613 infeasible   50         3.00000    1.08926  63.7%  2185  919s
+  2270   586     cutoff   44         3.00000    1.10558  63.1%  2227  934s
+  2302   555     cutoff   45         3.00000    1.13731  62.1%  2276  950s
+  2334   527 infeasible   31         3.00000    1.17006  61.0%  2334  966s
+  2362   504     cutoff   39         3.00000    1.24502  58.5%  2378  981s
+  2384   460 infeasible   48         3.00000    1.30994  56.3%  2428  996s
+  2434   431 infeasible   40         3.00000    1.61560  46.1%  2426 1012s
+  2470   358     cutoff   37         3.00000    1.74569  41.8%  2423 1036s
+  2598   233     cutoff   36         3.00000    1.99836  33.4%  2356 1062s
+  2724   179 infeasible   40         3.00000    2.00000  33.3%  2342 1075s
+
+Cutting planes:
+  Gomory: 2
+  Cover: 201
+  Implied bound: 29
+  Projected implied bound: 483
+  Clique: 256
+  MIR: 811
+  StrongCG: 153
+  Flow cover: 270
+  Inf proof: 4
+  Zero half: 438
+  Network: 63
+  RLT: 1040
+  Relax-and-lift: 2240
+
+Explored 2748 nodes (8690913 simplex iterations) in 1075.72 seconds
+Thread count was 8 (of 8 available processors)
+
+Solution count 5: 3 5 5 ... 7
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 3.000000000000e+00, best bound 3.000000000000e+00, gap 0.0000%
+最优解已找到.
+Warning: linear constraint 1440 and linear constraint 1441 have the same name "CapacityLimitation"
+Cargo in compartment 1, layer 1, from source 1 to destination 3: 180.0
+Cargo in compartment 1, layer 2, from source 1 to destination 3: 180.0
+Cargo in compartment 1, layer 3, from source 1 to destination 3: 180.0
+Cargo in compartment 1, layer 4, from source 1 to destination 3: 180.0
+Cargo in compartment 1, layer 5, from source 1 to destination 3: 180.0
+Cargo in compartment 1, layer 6, from source 1 to destination 3: 180.0
+Cargo in compartment 1, layer 7, from source 1 to destination 3: 180.0
+Cargo in compartment 1, layer 8, from source 1 to destination 2: 180.0
+Cargo in compartment 1, layer 9, from source 1 to destination 2: 180.0
+Cargo in compartment 1, layer 10, from source 2 to destination 1: 180.0
+Cargo in compartment 2, layer 1, from source 3 to destination 2: 630.0
+Cargo in compartment 2, layer 2, from source 3 to destination 2: 630.0
+Cargo in compartment 2, layer 3, from source 3 to destination 2: 630.0
+Cargo in compartment 2, layer 4, from source 3 to destination 2: 630.0
+Cargo in compartment 2, layer 5, from source 3 to destination 2: 630.0
+Cargo in compartment 2, layer 6, from source 3 to destination 2: 630.0
+Cargo in compartment 2, layer 7, from source 3 to destination 2: 630.0
+Cargo in compartment 2, layer 8, from source 3 to destination 1: 315.0
+Cargo in compartment 2, layer 8, from source 3 to destination 2: 315.0
+Cargo in compartment 2, layer 9, from source 3 to destination 1: 630.0
+Cargo in compartment 2, layer 10, from source 3 to destination 1: 630.0
+Cargo in compartment 3, layer 1, from source 1 to destination 4: 630.0
+Cargo in compartment 3, layer 2, from source 1 to destination 4: 630.0
+Cargo in compartment 3, layer 3, from source 1 to destination 4: 630.0
+Cargo in compartment 3, layer 4, from source 1 to destination 4: 630.0
+Cargo in compartment 3, layer 5, from source 1 to destination 3: 545.0
+Cargo in compartment 3, layer 5, from source 1 to destination 4: 85.0
+Cargo in compartment 3, layer 6, from source 1 to destination 3: 630.0
+Cargo in compartment 3, layer 7, from source 1 to destination 3: 630.0
+Cargo in compartment 3, layer 8, from source 1 to destination 3: 630.0
+Cargo in compartment 3, layer 9, from source 1 to destination 3: 630.0
+Cargo in compartment 3, layer 10, from source 1 to destination 3: 630.0
+Cargo in compartment 4, layer 1, from source 2 to destination 2: 630.0
+Cargo in compartment 4, layer 2, from source 2 to destination 2: 630.0
+Cargo in compartment 4, layer 3, from source 2 to destination 2: 630.0
+Cargo in compartment 4, layer 4, from source 2 to destination 2: 630.0
+Cargo in compartment 4, layer 5, from source 2 to destination 2: 630.0
+Cargo in compartment 4, layer 6, from source 2 to destination 1: 135.0
+Cargo in compartment 4, layer 6, from source 2 to destination 2: 495.0
+Cargo in compartment 4, layer 7, from source 2 to destination 1: 630.0
+Cargo in compartment 4, layer 8, from source 2 to destination 1: 630.0
+Cargo in compartment 4, layer 9, from source 2 to destination 1: 630.0
+Cargo in compartment 4, layer 10, from source 2 to destination 1: 630.0
+Cargo in compartment 5, layer 1, from source 3 to destination 4: 630.0
+Cargo in compartment 5, layer 2, from source 3 to destination 4: 630.0
+Cargo in compartment 5, layer 3, from source 3 to destination 4: 630.0
+Cargo in compartment 5, layer 4, from source 3 to destination 4: 630.0
+Cargo in compartment 5, layer 5, from source 3 to destination 4: 630.0
+Cargo in compartment 5, layer 6, from source 3 to destination 4: 630.0
+Cargo in compartment 5, layer 7, from source 3 to destination 4: 630.0
+Cargo in compartment 5, layer 8, from source 3 to destination 3: 630.0
+Cargo in compartment 5, layer 9, from source 3 to destination 3: 630.0
+Cargo in compartment 5, layer 10, from source 3 to destination 3: 630.0
+Cargo in compartment 6, layer 1, from source 1 to destination 3: 200.0
+Cargo in compartment 6, layer 2, from source 1 to destination 3: 200.0
+Cargo in compartment 6, layer 3, from source 1 to destination 3: 200.0
+Cargo in compartment 6, layer 4, from source 1 to destination 3: 200.0
+Cargo in compartment 6, layer 5, from source 1 to destination 3: 200.0
+Cargo in compartment 6, layer 6, from source 1 to destination 3: 200.0
+Cargo in compartment 6, layer 7, from source 1 to destination 3: 200.0
+Cargo in compartment 6, layer 8, from source 3 to destination 3: 200.0
+Cargo in compartment 6, layer 9, from source 3 to destination 3: 200.0
+Cargo in compartment 6, layer 10, from source 3 to destination 3: 200.0
+Optimal objective value: 3.0
