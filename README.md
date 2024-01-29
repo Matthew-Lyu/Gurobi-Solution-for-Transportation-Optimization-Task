@@ -182,7 +182,7 @@ $$
 &\quad \quad \quad s.t. \quad has\_cargo[i, j, s, d]=0 \\
 &\underline{else \quad if \quad cargo[i, j, s, d]>0:}\\
 &\quad \quad\quad cargo[i, j, s, d]/M \in (0, 1)  \\ &\quad \quad\quad \Rightarrow has\_cargo[i, j, s, d] \geq cargo[i, j, s, d]/M \\
-&\quad \quad\quad s.t. \quad has_cargo[i, j, s, d]=1
+&\quad \quad\quad s.t. \quad has\_cargo[i, j, s, d]=1
 \end{aligned}
 \end{equation*}
 $$
