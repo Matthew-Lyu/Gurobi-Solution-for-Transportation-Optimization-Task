@@ -64,19 +64,22 @@
 
   送达地需求限制，所有送达地d的需求必须满足到货量不能小于Q[s, d]。数学语言描述如下：
 
-$$
-\sum_{i=1}^{n} \sum_{j=1}^{m} \sum_{s=1}^{S} cargo[i, j, s, d] \geq Q[s, d], \quad \forall d \in \{1, \ldots, D\}
-$$
+  $$
+  \sum_{i=1}^{n} \sum_{j=1}^{m} \sum_{s=1}^{S} cargo[i, j, s, d] \geq Q[s, d], \quad \forall d \in \{1, \ldots, D\}
+  $$
 
 - **约束4**
 
   装卸限制，由于船舶是从装载地 1 出发，顺序经过装载地 1、2、3、送达地 A、B、C、D。在每个舱室，来自装载地s的纸浆包总在来自装载地s+1的纸浆包之下。在每个舱室，去往送达地d的纸浆包总在去往送达地d+1的纸浆包之上。用“$\Rightarrow$”表示“如果...则...”的逻辑关系，则约束4可以用以下数学语言描述:
 
   装载限制：
+
   $$
   cargo[i,j,s,d] > 0 \Rightarrow \sum_{j\_=1}^{j-1} \sum_{s\_=s+1}^{S} \sum_{d\_=1}^{D}cargo[i, j\_, s\_, d\_] = 0,\\ \quad \forall i \in \{1, \ldots, n\}, \quad \forall j \in \{1, \ldots, m\}
   $$
+
   卸载限制：
+
   $$
   cargo[i,j,s,d] > 0 \Rightarrow \sum_{j\_=1}^{j-1} \sum_{s\_=1}^{S} \sum_{d\_=1}^{d-1}cargo[i, j\_, s\_, d\_] = 0,\\ \quad \forall i \in \{1, \ldots, n\}, \quad \forall j \in \{1, \ldots, m\}
   $$
@@ -84,6 +87,7 @@ $$
 - **约束5**
 
   在每个装载或卸载地时，不能同时打开 2、3 舱和 4、5 舱。换句话说，2舱和3舱与4舱和5舱不能装载相同s或相同d的货物。数学语言描述如下：
+
   $$
   \sum_{j=1}^{m} \sum_{d=1}^{D}cargo[2, j, s, d]>0 \Rightarrow \sum_{j=1}^{m} \sum_{d=1}^{D}cargo[3, j, s, d]=0,\quad \forall s, \forall d
   \\
@@ -97,6 +101,7 @@ $$
 ### 目标函数
 
 不同装载地-送达地的纸浆包混装在同层的次数尽可能少，数学语言表示如下：
+
 $$
 goal = Min(\sum_{i,j = 1}^{n,m} mix[i,j])
 $$
