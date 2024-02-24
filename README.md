@@ -39,6 +39,7 @@
 - **约束0**
 
   第i舱第j层从s发往d的纸浆包数量必须是非负整数。
+
   $$
   cargo[i, j, s, d] \geq 0, \quad \forall i \in \{1, \ldots, n\}, j \in \{1, \ldots, m\},\forall s \in \{1, \ldots, S\}, d \in \{1, \ldots, D\}
   $$
@@ -46,6 +47,7 @@
 - **约束1**
 
   舱室容量限制，第i舱室第j层的纸浆包数量不能超过C[i,j]。数学语言描述如下：
+
   $$
   \sum_{s=1}^{S} \sum_{d=1}^{D} cargo[i, j, s, d] \leq C[i, j], \quad \forall i \in \{1, \ldots, n\}, j \in \{1, \ldots, m\}
   $$
@@ -53,6 +55,7 @@
 - **约束2**
 
   装载地供应限制，所有从装载地s装载的纸浆包数量不能超过P[s]。数学语言描述如下：
+
   $$
   \sum_{i=1}^{n} \sum_{j=1}^{m} \sum_{d=1}^{D} cargo[i, j, s, d] \leq P[s], \quad \forall s \in \{1, \ldots, S\}
   $$
@@ -60,9 +63,10 @@
 - **约束3**
 
   送达地需求限制，所有送达地d的需求必须满足到货量不能小于Q[s, d]。数学语言描述如下：
-  $$
-  \sum_{i=1}^{n} \sum_{j=1}^{m} \sum_{s=1}^{S} cargo[i, j, s, d] \geq Q[s, d], \quad \forall d \in \{1, \ldots, D\}
-  $$
+
+$$
+\sum_{i=1}^{n} \sum_{j=1}^{m} \sum_{s=1}^{S} cargo[i, j, s, d] \geq Q[s, d], \quad \forall d \in \{1, \ldots, D\}
+$$
 
 - **约束4**
 
