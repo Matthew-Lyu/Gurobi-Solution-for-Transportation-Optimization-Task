@@ -75,13 +75,13 @@
   装载限制：
 
   ```math
-  cargo[i,j,s,d] > 0 \Rightarrow \sum_{j\_=1}^{j-1} \sum_{s\_=s+1}^{S} \sum_{d\_=1}^{D}cargo[i, j\_, s\_, d\_] = 0,\\ \quad \forall i \in \{1, \ldots, n\}, \quad \forall j \in \{1, \ldots, m\}
+  cargo[i,j,s,d] > 0 \Rightarrow \sum_{j\_=1}^{j-1} \sum_{s\_=s+1}^{S} \sum_{d\_=1}^{D}cargo[i, j\_, s\_, d\_] = 0,\quad \forall i \in \{1, \ldots, n\}, \quad \forall j \in \{1, \ldots, m\}
   ```
 
   卸载限制：
 
   ```math
-  cargo[i,j,s,d] > 0 \Rightarrow \sum_{j\_=1}^{j-1} \sum_{s\_=1}^{S} \sum_{d\_=1}^{d-1}cargo[i, j\_, s\_, d\_] = 0,\\ \quad \forall i \in \{1, \ldots, n\}, \quad \forall j \in \{1, \ldots, m\}
+  cargo[i,j,s,d] > 0 \Rightarrow \sum_{j\_=1}^{j-1} \sum_{s\_=1}^{S} \sum_{d\_=1}^{d-1}cargo[i, j\_, s\_, d\_] = 0,\quad \forall i \in \{1, \ldots, n\}, \quad \forall j \in \{1, \ldots, m\}
   ```
 
 - **约束5**
