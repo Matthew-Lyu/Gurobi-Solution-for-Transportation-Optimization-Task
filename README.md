@@ -88,7 +88,7 @@
 
   在每个装载或卸载地时，不能同时打开 2、3 舱和 4、5 舱。换句话说，2舱和3舱与4舱和5舱不能装载相同s或相同d的货物。数学语言描述如下：
 
-  ```
+  ```math
   \sum_{j=1}^{m} \sum_{d=1}^{D}cargo[2, j, s, d]>0 \Rightarrow \sum_{j=1}^{m} \sum_{d=1}^{D}cargo[3, j, s, d]=0,\quad \forall s, \forall d
   \\
   \sum_{j=1}^{m} \sum_{d=1}^{D}cargo[3, j, s, d]>0 \Rightarrow \sum_{j=1}^{m} \sum_{d=1}^{D}cargo[2, j, s, d]=0,\quad \forall s, \forall d
@@ -348,7 +348,7 @@ for d in range(1, D+1):
 
 添加约束mix[i, j]大于等于这个数则保证mix[i, j]=1时该格存在混装，mix[i, j]=0时该格未混装。
 
-同时，注意到，某一格只装一种装载地/送达地的纸浆包，则应该让这种纸浆包填满这一格，否则会造成资源的浪费，所以第二个约束是针对当mix[i, j] = 0时，$\sum_{s,d}{}$cargo[i,j,s,d] $\forall s,d $ >= C[i, j]，由于之前已经约束过$\sum_{s,d}{}$cargo[i,j,s,d] $\forall s,d $ <= C[i, j]，所以这里会让$\sum_{s,d}{}$cargo[i,j,s,d] $\forall s,d $ 强制等于C[i, j]，也就是填满这一格。当mix[i, j] = 1时不需要这层约束，可以让其大于C[i, j] - M * mix[i,j]，即一个很小的数，代表不需要这层约束。
+同时，注意到，某一格只装一种装载地/送达地的纸浆包，则应该让这种纸浆包填满这一格，否则会造成资源的浪费，所以第二个约束是针对当mix[i, j] = 0时，$\sum_{s,d}{}$ cargo[i,j,s,d] $\forall s,d$ >= C[i, j]，由于之前已经约束过$\sum_{s,d}{}$ cargo[i,j,s,d] $\forall s,d$ <= C[i, j]，所以这里会让$\sum_{s,d}{}$ cargo[i,j,s,d] $\forall s,d$ 强制等于C[i, j]，也就是填满这一格。当mix[i, j] = 1时不需要这层约束，可以让其大于C[i, j] - M * mix[i,j]，即一个很小的数，代表不需要这层约束。
 
 ```python
 # 目标函数
