@@ -90,11 +90,16 @@
 
   ```math
   \sum_{j=1}^{m} \sum_{d=1}^{D}cargo[2, j, s, d]>0 \Rightarrow \sum_{j=1}^{m} \sum_{d=1}^{D}cargo[3, j, s, d]=0,\quad \forall s, \forall d
-  \\
+  ```
+  ```math
   \sum_{j=1}^{m} \sum_{d=1}^{D}cargo[3, j, s, d]>0 \Rightarrow \sum_{j=1}^{m} \sum_{d=1}^{D}cargo[2, j, s, d]=0,\quad \forall s, \forall d
-  \\
+  ```
+
+  ```math
   \sum_{j=1}^{m} \sum_{s=1}^{S}cargo[4, j, s, d]>0 \Rightarrow \sum_{j=1}^{m} \sum_{d=1}^{D}cargo[5, j, s, d]=0,\quad \forall s, \forall d
-  \\
+  ```
+
+  ```math
   \sum_{j=1}^{m} \sum_{s=1}^{S}cargo[5, j, s, d]>0 \Rightarrow \sum_{j=1}^{m} \sum_{d=1}^{D}cargo[4, j, s, d]=0,\quad \forall s, \forall d
   ```
 
